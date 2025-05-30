@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TODO</title>
+    <title>World4Omni | A Zero-Shot Framework from Image
+      Generation World Model to Robotic Manipulation</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="author" content="Anonymous">
@@ -47,7 +48,10 @@
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title">TODO</h1>
+              <h1 class="title is-1 publication-title"
+                  style="width: 90%; margin:0 auto;">
+                  World4Omni: A Zero-Shot Framework from Image Generation World Model <br>to Robotic Manipulation
+              </h1>
 
               <div class="is-size-5 publication-authors">
                 <div>
@@ -58,30 +62,30 @@
               <div class="column has-text-centered">
                 <div class="publication-links">
                   <!-- PDF Link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="#" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="ai ai-arxiv"></i>
                       </span>
                       <span>arXiv</span>
                     </a>
-                  </span>
+                  </span> -->
                   <span class="link-block">
-                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <a href="/static/data/W4O_paper_anonymous.pdf" class="external-link button is-normal is-rounded is-dark" target="_blank"> 
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
                       <span>Paper</span>
                     </a>
                   </span>
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="#" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
                       <span>Appendix</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Code Link -->
                   <span class="link-block">
@@ -93,15 +97,7 @@
                     </a>
                   </span>
 
-                  <!-- Dataset Link -->
-                  <span class="link-block">
-                    <a href="#" class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-database"></i>
-                      </span>
-                      <span>Data</span>
-                    </a>
-                  </span>
+                  
                 </div>
               </div>
             </div>
@@ -115,7 +111,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <video id="intro" controls playsinline height="100%">
-            <source src="./static/data/intro_video.mp4" type="video/mp4">
+            <source src="./static/data/World4Omni_supp2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -128,23 +124,30 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
+            <div class="content has-text-justified"
+            style="width: 90%; margin:0 auto;">
               <p>
-                TODO
+                Improving data efficiency and generalization in robotic manipulation remains a core challenge. We propose a novel framework that leverages a pre-trained multimodal image-generation model as a world model to guide policy learning. Exploiting its rich visual-semantic representations and strong generalization across diverse scenes, the model generates open-ended future state predictions that inform downstream manipulation. Coupled with zero-shot low-level control modules, our approach enables general-purpose robotic manipulation without task-specific training. Experiments in both simulation and real-world environments demonstrate that our method achieves effective performance across a wide range of manipulation tasks with no additional data collection or fine-tuning.
               </p>
             </div>
           </div>
         </div>
         <!--/ Abstract -->
 
+        <br>
+
         <!-- Overview -->
         <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Pipeline Overview</h2>
+          <div class="column is-full">
+            <h2 class="title is-3">Framework Overview</h2>
             <div class="content has-text-justified">
               <figure>
-                <img src="./static/image/pipeline.png" alt="TODO">
-                <figcaption style="font-style: normal; font-size: 0.95em;">TODO</figcaption>
+                <img src="/static/data/overview.png" alt="Overview of World4Omni" style="max-width: 100%;">
+                <figcaption style="font-style: normal; font-size: 0.95em; text-align: left;"> 
+                  <b>An instantiation of our framework</b>. Agent Collaboration involves the Task Planner, Scene Dreamer, and Reflector agents working together <b style="color: #ffc000;">(Yellow)</b>. 
+                  The Scene Dreamer and Reflector together form the Reflective World Model, which produces subgoal images and point clouds <b style="color: #5b9bd5;">(Blue)</b>. 
+                  The Low-level Policy consumes the current and goal observations and outputs the robot actions <b style="color: #70ad47;">(Green)</b>.
+                </figcaption>
               </figure>
             </div>
           </div>
@@ -154,9 +157,9 @@
     </section>
 
     <!-- BibTex -->
-    <section class="section" id="BibTeX">
+    <!-- <section class="section" id="BibTeX">
       TODO
-    </section>
+    </section> -->
     <!--/ BibTex -->
 
     <!-- Footer -->
